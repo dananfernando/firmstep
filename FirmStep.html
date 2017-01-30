@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html> 
+<title> FirmStep Platform </title>
+<head> 
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-color: white;
+}
+h1 {color: black;
+	text-align: center;} 
+h3 {text-align: center;}
+</head>
+</style>
+<body> 
+<div class="container">
+<div class="col-md-12">
+
+<h1> Islington Council </h1><br>
+<h3> <b>Queue App</b> </h2><br>
+<h4> New Customer </h4>
+</div>
+<div class="col-md-6">
+<form action="">
+  <input type="radio" name="customer" value="housing"> Housing<br>
+  <input type="radio" name="customer" value="benefits"> Benefits<br>
+  <input type="radio" name="customer" value="Council Tax">Council Tax<br>
+  <input type="radio" name="customer" value="fy-tipping">Fly-tipping<br>
+
+  <input type="radio" name="customer" value="missed bin">Missed Bin <br>
+
+  <button type="button" class="btn btn-primary">Citizen</button>
+    <button type="button" class="btn btn-primary">Organisation</button>
+      <button type="button" class="btn btn-primary">Annoynomous</button> <br></form>
+  <form action="">
+  Title<br>
+    <select>
+      <option value="Mr">Mr</option>
+      <option value="Ms">Ms</option>
+    </select>
+  <br>
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br><br>
+    <button type="button" class="btn btn-primary" onClick="alert('Citizen added to the queue');">Submit</button> </form>
+
+</div>
+<div class="col-md-6">
+  <h2>Queue</h2>
+  <p>List of the customers being qeued.</p>
+  <table class="table">
+    <thead>
+      <tr>
+      	<th>#</th>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Service</th>
+        <th>Qeued at</th>
+
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Citizen</td>
+        <td>Mr. Jon Snow</td>
+        <td>Missed Bin</td>
+        <td>9.43</td>
+
+      </tr>      
+       <tr>
+        <td>2</td>
+        <td>Citizen</td>
+        <td>Mrs. Lois Griffin</td>
+        <td>Housing</td>
+        <td>10.10</td
+        </tr>
+
+         <tr>
+        <td>3</td>
+        <td>Organisation</td>
+        <td>Brian</td>
+        <td>Fly-tipping</td>
+        <td>10.12</td>
+      </tr>   
+
+      <tr>
+        <td>4</td>
+        <td>Annoynomous</td>
+        <td>Annoynomous</td>
+        <td>Fly-tipping</td>
+        <td>11.14</td>
+
+      </tr>      
+      </tr>      
+      
+    </tbody>
+  </table>
+  </div>
+</div>
+ </body>
+</html>
